@@ -4,21 +4,21 @@ using namespace std;
 
 int main(){
     int n; cin >> n;
-    double a[n];
-    double soma=0;
+    int a[n];
+    long long soma=0;
     for(int i=0; i<n; i++){
         cin >> a[i];
         soma+=a[i];
     }
-    double media= soma/n;
+    double media= static_cast<double>(soma)/n;
     int acima=0;
     int abaixo=0;
-    for(double num : a){
-        if(num>=media){
-            acima+=1;
+    for(int i=0; i<n; i++){
+        if(a[i]>=media){
+            acima++;
         }
         else{
-            abaixo+=1;
+            abaixo++;
         }
     }
     cout << fixed << setprecision(1) << media << endl;
