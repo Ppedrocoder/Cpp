@@ -12,9 +12,9 @@ int machupichu(int matriz[20][20], int linha, int coluna, int l, int c){
     {
         return 0;
     }
-    matriz[l][c] = 9;
+    //matriz[l][c] = 9;
     int menor = matriz[l][c] + min({machupichu(matriz, linha, coluna, l-1,c-1), machupichu(matriz, linha, coluna, l-1, c), machupichu(matriz, linha, coluna, l-1, c+1)});
-    matriz[l][c] = 0;
+    //matriz[l][c] = 0;
     return menor;
 }
 
