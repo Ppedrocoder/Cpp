@@ -33,6 +33,6 @@ int main(){
         if (esforco<resposta)
             resposta = esforco;
     }
-    cout << resposta << "\n";
+    cout << resposta << endl;
     return 0;
 }
